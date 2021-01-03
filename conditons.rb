@@ -1,5 +1,5 @@
-ismale = false
-isshort = false
+ismale = true
+isshort = true
 
 if ismale and isshort
   puts "This is a short male"
