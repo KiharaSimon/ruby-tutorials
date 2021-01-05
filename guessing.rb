@@ -1,9 +1,9 @@
 
-secret_word = "giraffe"
-guess = ""
-guess_count = 0
-guess_limit = 3
-out_of_guess = false
+secret_word = "giraffe" #This variable will strore the secret word
+guess = ""   #This variable will store any guess you input
+guess_count = 0 #This willl initialize the number counts
+guess_limit = 3 #This will show the number of counts
+out_of_guess = false #This will show the state of guess limit.
 
 while guess != secret_word and !out_of_guess
   if (guess_count < guess_limit)
