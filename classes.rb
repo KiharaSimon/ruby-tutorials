@@ -1,12 +1,14 @@
  class Citizen
    attr_accessor :name, :race, :occupation
 
+   def initialize(name, race, occupation)  #initilizor method
+     @name = name
+     @race = race
+     @occupation = occupation
+   end
+
  end
 
- citizen1 = Citizen.new()
-citizen1.name = "James Connen"
-citizen1.race = "Latino"
-citizen1.occupation = "Farmer"
-
+ citizen1 = Citizen.new("John Mwangi", "Black", "Doctor")
 
 puts citizen1.name
