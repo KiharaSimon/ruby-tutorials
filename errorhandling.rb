@@ -3,10 +3,13 @@ lucky_numbers = [1, 2, 6, 7, 9]
 
 begin
 
-  puts lucky_numbers["me"]
+  #puts lucky_numbers["me"]
+  num = 10 / 0
 
-rescue
-  puts "TypeError"
+#rescue TypeError => e
+  #puts  e
+rescue ZeroDivisionError => e
+  puts e
 
 
 end
