@@ -1,14 +1,6 @@
-class Hash
-  attr_accessor :key, :value
-  def initialize(key, value)
-    @key = key
-    @value = value
-  end
-end
-hash1 = Hash.new()
-
 def group_by_owners(files)
-  return files
+  better_hash = Hash.new { |hash, key| hash[key] = [] }
+  files.each_with_object(better_hash) {|(key, value), hash| hash[value] << key}
 end
 
 files = {
@@ -16,4 +8,5 @@ files = {
   'Code.py' => 'Stan',
   'Output.txt' => 'Randy'
 }
+
 puts group_by_owners(files)
