@@ -1,7 +1,10 @@
-def unique_names(names1, names2)
-  return (names1 + names2).uniq
+a = Array(-10000..10000)
+def solution(a)
+  # write your code in Ruby 2.2
+  for i in a
+    if i = a.min and i % 11 == 0
+      return i
+    end
+  end
 end
-
-names1 = ["Ava", "Emma", "Olivia"]
-names2 = ["Olivia", "Sophia", "Emma"]
-puts unique_names(names1, names2)
+puts solution([-11, 20, 22, 66, -77])
